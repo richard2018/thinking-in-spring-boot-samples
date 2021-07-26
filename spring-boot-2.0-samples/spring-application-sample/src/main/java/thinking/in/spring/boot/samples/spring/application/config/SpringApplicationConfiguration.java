@@ -17,6 +17,8 @@
 package thinking.in.spring.boot.samples.spring.application.config;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -27,5 +29,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @EnableAutoConfiguration
+@ComponentScan(basePackages = {"thinking.in.spring.boot.samples.spring.application"})
 public class SpringApplicationConfiguration {
 }
